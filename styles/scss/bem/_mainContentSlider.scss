@@ -1,0 +1,68 @@
+.b-mainContent {
+  &_paddingBottom {
+    padding-bottom: 50px;
+  }
+  &__slider {
+    @media (max-width: 575px) {
+      display: none;
+    }
+    &_padding {
+      padding: 30px;
+      background-color: $colorLight;
+    }
+  }
+  &__textBlock {
+    padding: 15px 29px;
+    width: 455px;
+    min-height: 115px;
+    background-color: transparentize($color: $colorTextBack, $amount: 0.4);
+    right: 11px !important;
+    left: 45%;
+    bottom: 28px;
+    color: $colorTextSlider;
+    text-align: left;
+    @media (max-width: 959px) {
+      display: none !important;
+    }
+
+    h5 {
+      font-size: 36px;
+      line-height: 40px;
+      opacity: 1 !important;
+      margin: 0 0 10px 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      opacity: 1 !important;
+    }
+  }
+  &__item {
+    width: 900px !important;
+    height: 400px !important;
+    @media (max-width: 959px) {
+      width: 100% !important;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__button_indicators {
+    width: 16px !important;
+    height: 16px !important;
+    background-color: $colorDark !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+  }
+  &__carousel-indicators {
+    bottom: -60px;
+  }
+
+  &__carousel-indicators .active {
+    background-color: $colorTextBack !important;
+  }
+}

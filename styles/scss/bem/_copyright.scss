@@ -1,0 +1,22 @@
+.b-copyright_layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    font-size: 12px;
+    line-height: 14px;
+    color: $colorSloganText;
+    padding: 24px 0;
+    @media (max-width: 649px) {
+      padding: 10px 0;
+    }
+  }
+  div:first-child {
+    @media (max-width: 649px) {
+      padding: 10px 0 0 0;
+    }
+  }
+}
+
+
+

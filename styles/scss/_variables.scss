@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../fonts/Georgia/Georgia.woff2") format("woff2"),
+    url("../../fonts/Georgia/Georgia.woff") format("woff"),
+    url("../../fonts/Georgia/Georgia.ttf") format("ttf");
+  font-weight: 400;
+}
+
+$colorBack: #ebebeb;
+$colorIconBack: #d2d2d2;
+$colorLight: #fff;
+$colorDark: #333;
+$colorSloganText: #999;
+$colorDecor: #97455f;
+$colorNav: #6a3144;
+$colorHover: #ee802f;
+$colorTextBack: #adadad;
+$colorTextSlider: #383838;
+$colorTextOrciinterdum: #e5e5e5;
+$colorPlaceholder: #989898;
+
+%textUppercase {
+  text-transform: uppercase;
+}
+%decorDelimiter {
+  background-color: $colorBack;
+  height: 5px;
+  width: 100%;
+}
+%captionYourTitleGrid {
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorDark;
+  background-color: $colorLight;
+  padding: 0 7px;
+  z-index: 2;
+  position: absolute;
+  top: -7px;
+}
+%imgObject {
+  object-fit: cover;
+  object-position: center center;
+}
+%floatLayout {
+  overflow: hidden;
+  padding-left: 10px;
+}
+%yourTitleGridParagraph {
+  font-size: 13px;
+  line-height: 18px;
+  color: $colorSloganText;
+}
+%clearBoth {
+  content: "";
+  display: block;
+  clear: both;
+}

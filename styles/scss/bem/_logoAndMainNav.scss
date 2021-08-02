@@ -1,0 +1,122 @@
+.b-logotypeAndSiteSearch {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 58px 0 49px;
+  @media (max-width: 575px) {
+    margin: 30px 0 28px;
+  }
+}
+
+.b-logotype {
+  display: flex;
+  justify-content: space-between;
+  &_adaptive {
+    @media (max-width: 586px) {
+      margin-left: 10px;
+    }
+  }
+  &__logo_decor {
+    @extend %textUppercase;
+    font-size: 36px;
+    line-height: 36px;
+    color: $colorDark;
+  }
+  &__logo_span {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  &__slogan_decor {
+    font-size: 12px;
+    line-height: 17px;
+    color: $colorSloganText;
+    padding-left: 6px;
+    margin-left: 10px;
+    border-left: 1px solid $colorSloganText;
+    height: 32px;
+  }
+}
+.b-siteSearch {
+  display: flex;
+  height: 33px;
+  &_adaptive {
+    @media (max-width: 586px) {
+      margin: 15px 0 0 10px;
+    }
+  }
+  &__input {
+    min-width: 218px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $colorSloganText;
+    border-radius: 5px 0 0 5px;
+  }
+  &__input_decor:focus {
+    background-color: lighten($colorNav, 50%);
+    color: $colorDark;
+  }
+  &__button {
+    padding: 10px;
+    background-color: $colorDecor;
+    @extend %textUppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    color: $colorLight;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+  }
+}
+.b-mainNav {
+  display: flex;
+  &_margin {
+    margin-bottom: 80px;
+  }
+  &__wrap_backColor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 50px;
+    background-color: $colorDecor;
+    padding-left: 15px;
+    border-radius: 0 5px 0 0;
+    @media (max-width: 696px) {
+      padding: 0;
+    }
+  }
+  &__wrap_backColor:first-child {
+    min-height: 50px;
+    width: 69px;
+    background-color: $colorNav;
+    padding: 0 16px;
+    border-radius: 5px 0 0 0;
+    @media (max-width: 696px) {
+      padding: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    @extend %textUppercase;
+    color: $colorLight;
+    font-size: 12px;
+    line-height: 12px;
+    transition-duration: 0.5s;
+    @media (max-width: 696px) {
+      margin-left: 31px;
+    }
+  }
+  &__link:hover {
+    color: $colorSloganText;
+  }
+  &__link_decor:nth-child(n + 2) {
+    margin-left: 31px;
+  }
+  &__link_margin {
+    @media (max-width: 696px) {
+      margin-left: 10px;
+    }
+  }
+}

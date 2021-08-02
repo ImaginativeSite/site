@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+.wrapper {
+  background-color: $colorBack;
+}
+.imaginativeContainer {
+  max-width: 960px;
+  margin: 0 auto;
+  @media (max-width: 959px) {
+    padding: 0 7px;
+  }
+}
+.imaginativeContainer_mainMargin {
+  margin-top: -80px;
+}
+.wrapper_decor {
+  border-top: 1px solid $colorDecor;
+  min-height: 275px;
+  @media (max-width: 575px) {
+    min-height: 225px;
+  }
+}
+.wrapperFooter_decor {
+  border-top: 5px solid $colorIconBack;
+  border-bottom: 1px solid $colorIconBack;
+}
+.yourTitleContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  @media (max-width: 899px) {
+    padding: 0 20px;
+  }
+}
